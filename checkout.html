@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/eb9652bfdd.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3aa474e9d3.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">$("#Telefone").mask("(00) 00000-0000");</script>
+    <title>Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Checkout</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Checkout</h1>
+        <section id="carrinho-conteudo">
+            <h2>Itens no Carrinho</h2>
+            <ul id="lista-carrinho-checkout"></ul>
+        </section>
+        <section id="informacoes">
+            <h2>Informações de Contato</h2>
+            <form action="enviar_email.php" method="post" id="form-checkout">
+
+                <label for="Nome">Nome:</label>
+                <div class="rotulo">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    <input type="text" name="Nome" id="Nome" placeholder="Escreva seu Nome Completo" required>
+                </div>
+        
+                <label for="Email">E-mail:</label>
+                <div class="rotulo">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" name="Email" id="Email" placeholder="Escreva seu Email" required>
+                </div>
+        
+                <label for="Telefone">Telefone:</label>
+                <div class="rotulo">
+                    <i class="fa-solid fa-mobile"></i>
+                    <input type="tel" id="Telefone" name="Telefone" placeholder="Escreva seu WhatsApp" pattern="\(\d{2}\) \d{5}-\d{4}" required>
+                </div>
+
+                <div class="payment-option-container">
+                    <label for="Pagamento">Forma de pagamento:</label>
+                    <div class="payment-option">
+                        <input type="radio" name="Pagamento" value="Pix" required>
+                        <span class="Pix">Pix</span>
+                        <i class="fa-brands fa-pix"></i>
+                    </div>
+                    <div class="payment-option">
+                        <input type="radio" name="Pagamento" value="Dinheiro" required>
+                        <span class="Dinheiro">Dinheiro</span>
+                        <i class="fa-solid fa-money-bill-1"></i>
+                    </div>
+                </div>
+
+                <div id="carrinho-hidden-fields"></div>
+
+                <button type="submit">Concluir Compra</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Terceirão - Todos os Direitos Reservados</p>
+        <p>Feito por Luiz A. L. Freitas</p>
+    </footer>
+
+    <div id="loading" class="loading-overlay">
+        <div class="loading-spinner"></div>
+        <p>Por favor, aguarde...</p>
+    </div>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

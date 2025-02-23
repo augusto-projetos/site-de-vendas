@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/eb9652bfdd.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3aa474e9d3.js" crossorigin="anonymous"></script>
+    <title>Contato</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contato</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contato">
+            <center>
+            <form action="enviar_email.php" method="post" id="form-checkout">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_subject" value="Novo Contato Sobre os Livros!">
+        
+                <h1 class="title">Entre em contato aqui:</h1>
+        
+                <label for="Nome">Nome:</label> 
+                <div class="rotulo">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    <input type="text" name="Nome" id="Nome" placeholder="Escreva seu Nome" required>
+                </div>
+        
+                <label for="Email">E-mail:</label>
+                <div class="rotulo">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" name="Email" id="Email" placeholder="Escreva seu Email" required>
+                </div>
+        
+                <label for="Telefone">Telefone:</label>
+                <div class="rotulo">
+                    <i class="fa-solid fa-mobile"></i>
+                    <input type="tel" id="Telefone" name="Telefone" placeholder="Escreva seu WhatsApp" pattern="\(\d{2}\) \d{5}-\d{4}" required>
+                </div>
+        
+                <label for="Mensagem">Mensagem:</label>
+                <div class="rotulo">
+                    <i class="fa-regular fa-message"></i>
+                    <input type="text" name="Mensagem" id="Mensagem" placeholder="Escreva uma Mensagem">
+                </div>
+        
+                <div id="btn">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+            </center>
+
+            <h1>Ou se preferir, entre diretamente via Whatsapp</h1>
+            <a href="https://api.whatsapp.com/send?phone=553171432163&text=Olá, gostaria de mais informações sobre os livros." class="whatsapp-button">Entre em Contato pelo WhatsApp</a>
+        </section>
+    </main>
+    <footer>
+        <p>Contato: luiz.alfreitas12@gmail.com</p>
+    </footer>
+
+    <div id="loading" class="loading-overlay">
+        <div class="loading-spinner"></div>
+        <p>Por favor, aguarde...</p>
+    </div>
+
+    <script src="contato.js"></script>
+
+</body>
+</html>

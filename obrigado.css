@@ -1,0 +1,18 @@
+html, body {
+    height: 100%;
+}
+html {
+    display: table;
+    width: 100%;
+}
+body {
+    width: 98%;
+}
+body {
+    display: table-cell;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    background: rgb(39,255,0);
+    background: linear-gradient(180deg, rgba(39,255,0,1) 0%, rgba(173,255,148,1) 50%, rgba(231,255,198,1) 100%);
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/eb9652bfdd.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3aa474e9d3.js" crossorigin="anonymous"></script>
+    <title>Loja de Livros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à Minha Loja de Livros</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <div id="carrinho">
+            Carrinho: <span id="total-itens">0</span> item(s)
+            <i class="fa-solid fa-cart-shopping" id="scroll-to-end-cart"></i>
+        </div>
+    </header>
+    <main>
+        <section id="livros">
+
+            <input type="text" id="search-bar" placeholder="Buscar livros...">
+
+            <div class="livro">
+                <img src="img/A Garota do Lago.jpg" alt="Livro 1">
+                <h3>A Garota do Lago</h3>
+                <p>Um livro de suspense, mistério e detetive. Livro novo, embalado</p>
+                <p>Preço: R$15,00</p>
+                <div class="quantidade">
+                    <button class="btn-quantidade diminuir">-</button>
+                    <input type="number" class="quantidade-input" value="1" min="1">
+                    <button class="btn-quantidade aumentar">+</button>
+                </div>
+                <button class="adicionar" data-nome="A Garota do Lago" data-preco="15">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="livro">
+                <img src="img/Talvez Agora.jpg" alt="Livro 2">
+                <h3>Talvez Agora</h3>
+                <p>Um livro de romance, da escritora Colleen Hoover. Livro novo, embalado</p>
+                <p>Preço: R$35,00</p>
+                <div class="quantidade">
+                    <button class="btn-quantidade diminuir">-</button>
+                    <input type="number" class="quantidade-input" value="1" min="1">
+                    <button class="btn-quantidade aumentar">+</button>
+                </div>
+                <button class="adicionar" data-nome="Talvez Agora" data-preco="35">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="livro">
+                <img src="img/Diário de Pilar no Egito.jpg" alt="Livro 3">
+                <h3>Diário de Pilar no Egito</h3>
+                <p>Semi-novo</p>
+                <p>Preço: R$20,00</p>
+                <div class="quantidade">
+                    <button class="btn-quantidade diminuir">-</button>
+                    <input type="number" class="quantidade-input" value="1" min="1">
+                    <button class="btn-quantidade aumentar">+</button>
+                </div>
+                <button class="adicionar" data-nome="Diário de Pilar no Egito" data-preco="20">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="livro">
+                <img src="img/E a terra escreveu uma carta.jpg" alt="Livro 4">
+                <h3>E a Terra Escreveu Uma Carta</h3>
+                <p>Semi-novo</p>
+                <p>Preço: R$22,00</p>
+                <div class="quantidade">
+                    <button class="btn-quantidade diminuir">-</button>
+                    <input type="number" class="quantidade-input" value="1" min="1">
+                    <button class="btn-quantidade aumentar">+</button>
+                </div>
+                <button class="adicionar" data-nome="E a Terra Escreveu Uma Carta" data-preco="22">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="livro">
+                <img src="img/O menino sem imaginação.jpg" alt="Livro 5">
+                <h3>O Menino Sem Imaginação</h3>
+                <p>Semi-novo</p>
+                <p>Preço: R$22,00</p>
+                <div class="quantidade">
+                    <button class="btn-quantidade diminuir">-</button>
+                    <input type="number" class="quantidade-input" value="1" min="1">
+                    <button class="btn-quantidade aumentar">+</button>
+                </div>
+                <button class="adicionar" data-nome="O Menino Sem Imaginação" data-preco="22">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="livro">
+                <img src="img/O mistério dos diamantes.jpg" alt="Livro 6">
+                <h3>O Mistério dos Diamantes</h3>
+                <p>Semi-novo</p>
+                <p>Preço: R$20,00</p>
+                <div class="quantidade">
+                    <button class="btn-quantidade diminuir">-</button>
+                    <input type="number" class="quantidade-input" value="1" min="1">
+                    <button class="btn-quantidade aumentar">+</button>
+                </div>
+                <button class="adicionar" data-nome="O Mistério dos Diamantes" data-preco="20">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="livro">
+                <img src="img/Pé de Poesia.jpg" alt="Livro 7">
+                <h3>Pé de Poesia</h3>
+                <p>Semi-novo</p>
+                <p>Preço: R$25,00</p>
+                <div class="quantidade">
+                    <button class="btn-quantidade diminuir">-</button>
+                    <input type="number" class="quantidade-input" value="1" min="1">
+                    <button class="btn-quantidade aumentar">+</button>
+                </div>
+                <button class="adicionar" data-nome="Pé de Poesia" data-preco="25">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="livro">
+                <img src="img/Planeta corpo.jpg" alt="Livro 8">
+                <h3>Planeta Corpo</h3>
+                <p>Semi-novo</p>
+                <p>Preço: R$30,00</p>
+                <div class="quantidade">
+                    <button class="btn-quantidade diminuir">-</button>
+                    <input type="number" class="quantidade-input" value="1" min="1">
+                    <button class="btn-quantidade aumentar">+</button>
+                </div>
+                <button class="adicionar" data-nome="Planeta Corpo" data-preco="30">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="livro">
+                <img src="img/Vida de cachorro.jpg" alt="Livro 9">
+                <h3>Vida de Cachorro</h3>
+                <p>Semi-novo</p>
+                <p>Preço: R$25,00</p>
+                <div class="quantidade">
+                    <button class="btn-quantidade diminuir">-</button>
+                    <input type="number" class="quantidade-input" value="1" min="1">
+                    <button class="btn-quantidade aumentar">+</button>
+                </div>
+                <button class="adicionar" data-nome="Vida de Cachorro" data-preco="25">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+        <section id="carrinho-conteudo">
+            <h2>Itens no Carrinho</h2>
+            <ul id="lista-carrinho"></ul>
+        </section>
+        <section id="checkout">
+            <button id="finalizar-compra">Finalizar Compra</button>
+        </section>
+    </main>
+
+    <footer id="page-end">
+        <p>&copy; 2024 Loja de Livros, Feita por Luiz Augusto</p>
+    </footer>
+    <button id="scroll-to-end" class="scroll-button">↓</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
